@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgot Password</title>
+  <link rel="stylesheet" href="Forgot_Pass.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="heading">Reset Your Password</h1>
+    <div class="main">
+      <img src="login.jpg" alt="Forgot Password" class="forgot_image">
+      <div class="forgot">
+        
+        <form class="forgot_form" action="Resend_Link.html" method="get">
+          <p class="info">
+            Enter your registered email address or username, and we’ll send you instructions to reset your password.
+          </p>
+
+          <label for="email">Email or Username:</label>
+          <input type="text" id="email" name="email" placeholder="Enter email or username" required>
+
+          <button class="forgotbut" type="submit">Send Reset Link</button>
+
+          <div class="login_line">
+            <span>Remembered your password?</span>
+            <a href="Login_Page.html" class="login_link">Log In</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

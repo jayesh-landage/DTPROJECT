@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #333;
+}
+
+/* .bg {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 80%;
+  opacity: 0.2;
+} */
+
+.top-banner {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.top-banner h1 {
+  font-size: 1.8rem;
+}
+
+.parking-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.parking-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.2s ease;
+}
+
+.parking-card:hover {
+  transform: scale(1.02);
+}
+
+.parking-card h2 {
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.parking-card p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+.aa{
+  text-decoration: none;
+  color: white;
+}
+.parking-card button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #006600;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.parking-card button:hover {
+  background-color: #004d00;
+}
+
+.footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 40px;
+  bottom: 0;
+}

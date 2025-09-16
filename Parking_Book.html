@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Parking Slot</title>
+  <link rel="stylesheet" href="Parking_Book.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Book Your Parking Slot</h1>
+    <form action="#" class="booking-form">
+
+      <label for="name">Enter your name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="vehicle-type">Enter vehicle type:</label>
+      <select id="vehicle-type" name="vehicle-type" required>
+        <option value="">-- Select Vehicle Type --</option>
+        <option value="car">Car</option>
+        <option value="bike">Bike</option>
+        <option value="scooter">Scooter</option>
+        <option value="truck">Truck</option>
+      </select>
+
+      <label for="vehicle-number">Enter vehicle number:</label>
+      <input type="text" id="vehicle-number" name="vehicle-number" placeholder="e.g. MH12AB1234" required>
+
+      <label for="entry-time">Enter Date and Time of Parking:</label>
+      <input type="datetime-local" id="entry-time" name="entry-time" required>
+
+      <label for="exit-time">Enter Time of Leaving Parking:</label>
+      <input type="datetime-local" id="exit-time" name="exit-time" required>
+
+      <button type="submit" class="submit-btn">Book Now</button>
+    </form>
+  </div>
+</body>
+
+</html>

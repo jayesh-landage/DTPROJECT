@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="Login_Page.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="heading">Welcome To Kumbhmela 2027</h1>
+    <div class="main">
+      <img src="login.jpg" alt="Login" class="login_image">
+      <div class="login">
+        <form class="login_form">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" placeholder="Enter username" required
+            pattern="[A-Za-z0-9]{3,15}" maxlength="15">
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" placeholder="Enter Password" required>
+
+          <button class="logbut" type="submit">Log In</button>
+
+          <div class="signup_line">
+            <span>You are new here?</span>
+            <a href="Sign_Page.html" class="signup">Sign Up</a>
+          </div>
+          <div class="forgot_line">
+            <a href="Forgot_Pass.html" class="forgot">Forgot Password?</a>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

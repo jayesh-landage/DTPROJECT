@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reset Password</title>
+  <link rel="stylesheet" href="Resend_Link.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="heading">Set New Password</h1>
+    <div class="main">
+      <img src="login.jpg" alt="Reset Password" class="reset_image">
+      <div class="reset">
+        <form class="reset_form" action="http://localhost:5000/reset-password" method="POST">
+          <input type="hidden" name="token" value="<!-- token will be inserted dynamically -->">
+
+          <label for="password">New Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter new password" required minlength="6">
+
+          <label for="confirm_password">Confirm Password:</label>
+          <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm new password" required minlength="6">
+
+          <button class="resetbut" type="submit">Update Password</button>
+
+          <div class="login_line">
+            <span>Back to</span>
+            <a href="Login_Page.html" class="login_link">Log In</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+<!-- Take the email entered. Verify if the user exists in your database. Generate a secure reset token (a unique link). Email the reset link to the user. When the user clicks the link, take them to a password reset page where they can set a new password. User enters email → submits form. Backend checks if user exists → generates token → emails reset link. User clicks reset link → you make another page like reset_password.html where they set a new password. -->
